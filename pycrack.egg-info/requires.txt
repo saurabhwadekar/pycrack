@@ -1,0 +1,11 @@
+itertools
+hashlib
+os
+pikepdf
+colorama
+time
+random
+zipfile
+msoffcrypto-tool
+io
+threading

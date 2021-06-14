@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: pycrack
+Version: 1.0.0.1
+Summary: This package simple python 3 program for crack pdf,zip,ms excel,ms world,ms power point 
+    files and md5,sha1,sha224,sha256,sha384,sha512,blake2b,blake2s passwords
+    and genrate word list
+Home-page: https://github.com/saurabhwadekar/pycrack.git
+Author: Saurabh Wadekar [INDIA]
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
