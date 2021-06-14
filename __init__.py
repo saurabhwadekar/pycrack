@@ -155,7 +155,8 @@ class PyCrack:
         {self.yellow}| |   | |_| |{self.blue}| |____| | | (_| | (__|   <    
         {self.yellow}|_|    \__, |{self.blue} \_____|_|  \__,_|\___|_|\_\\
         {self.yellow}        __/ |                           
-        {self.green}PyCrack{self.yellow}|___/ {self.green}The Password craking tool - Python 3                  
+        {self.green}PyCrack{self.yellow}|___/ {self.green}The Password craking tool - Python 3  
+        Git link - https://github.com/saurabhwadekar/pycrack.git                
         Coded by - ({self.blue} Saurabh Wadekar [INDIA] {self.green}){self.reset_all}
         """
     def pass_found(self,target,key,obj_time_time):
