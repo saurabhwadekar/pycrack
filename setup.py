@@ -10,5 +10,5 @@ setup(
     author = "Saurabh Wadekar [INDIA]",
     email = "saurabhwadekar420@gmail.com",
     url = "https://github.com/saurabhwadekar/pycrack.git",
-    install_requires = ['itertools','hashlib','os','pikepdf','colorama','time','random','zipfile','msoffcrypto-tool','io','threading']
+    install_requires = ['pikepdf==2.12.1','colorama==0.4.4','msoffcrypto-tool==4.12.0']
 )
