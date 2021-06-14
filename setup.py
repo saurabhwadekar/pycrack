@@ -9,6 +9,6 @@ setup(
     and genrate word list""",
     author = "Saurabh Wadekar [INDIA]",
     email = "saurabhwadekar420@gmail.com",
-    url = "https://github.com/saurabhwadekar/pycrack.git"
+    url = "https://github.com/saurabhwadekar/pycrack.git",
     install_requires = ['itertools','hashlib','os','pikepdf','colorama','time','random','zipfile','msoffcrypto-tool','io','threading']
 )
