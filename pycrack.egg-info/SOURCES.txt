@@ -1,6 +1,0 @@
-setup.py
-pycrack.egg-info/PKG-INFO
-pycrack.egg-info/SOURCES.txt
-pycrack.egg-info/dependency_links.txt
-pycrack.egg-info/requires.txt
-pycrack.egg-info/top_level.txt
