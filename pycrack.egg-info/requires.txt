@@ -1,0 +1,3 @@
+pikepdf==2.12.1
+colorama==0.4.4
+msoffcrypto-tool==4.12.0

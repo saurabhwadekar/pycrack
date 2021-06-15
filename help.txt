@@ -1,0 +1,2 @@
+use commands = sudo pip install --editable .
+ 

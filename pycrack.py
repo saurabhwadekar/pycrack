@@ -528,11 +528,7 @@ class PyCrack:
 
 
 
-
-
-
-
-
+main = PyCrack()
 
 if __name__ == "__main__":
     while True:
