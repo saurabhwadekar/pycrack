@@ -297,7 +297,7 @@ class PyCrack:
 
             elif b_commands == "5":
                 b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"")
-                hash_type = input("Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>")
+                hash_type = input(f"{self.red}Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>{self.reset_all}")
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -396,7 +396,7 @@ class PyCrack:
 
             elif b_commands == "5":
                 b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"")
-                hash_type = input("Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>")
+                hash_type = input(f"{self.red}Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>{self.reset_all}")
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
                 start_time = time.time()
                 for i in self.gen.Dictionay(b_dic):
