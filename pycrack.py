@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import hashlib,os,pikepdf,colorama,time,random,zipfile,msoffcrypto,io,threading
 from itertools import product
+from rarfile import RarFile
 
 class Genrator:
 
@@ -39,8 +40,16 @@ class Check_Key:
         except pikepdf._qpdf.PasswordError:
             return False
 
-    def rar_key(self):
-        pass
+    def rar_key(self,file_name_or_path,password):
+        f = RarFile(file_name_or_path)
+        d = f.namelist()
+        try:
+            f.read(d[0],pwd=str(password).encode())
+            f.close()
+            return True
+        except:
+            f.close()
+            return False
 
     def zip_key(self,file_name_or_path,password):
         f = zipfile.ZipFile(file_name_or_path)
