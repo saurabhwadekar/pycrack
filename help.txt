@@ -3,7 +3,7 @@
 |                                                                       |
 |        PyCrack This Tool Coded By - Saurabh Wadekar - Python3.9       | 
 '------------------------------use commands-----------------------------'
-1) sudo pip install requires.txt
+1) sudo pip install -r requires.txt
 2) sudo chmod +x pycrack.py
 3) ./pycrack.py     OR    python pycrack.py
 
