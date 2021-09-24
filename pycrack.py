@@ -238,7 +238,7 @@ class PyCrack:
             print(f"{self.blue}       {self.red}[5]{self.blue} Hash {self.red}[6]{self.blue} Genrate Dictionay {self.red}[0]{self.blue} Exit{self.reset_all}")
             b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/BrutForce~#{self.reset_all} ")
             if b_commands == "1":
-                b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -254,7 +254,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "2":
-                b_rar = input(f"{self.red}Input RAR File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_rar = input(f"{self.red}Input RAR File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -270,7 +270,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "3":
-                b_zip = input(f"{self.red}Input zip File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_zip = input(f"{self.red}Input zip File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -286,7 +286,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "4":
-                b_ms_f =input(f"{self.red}Input (Excel,World,PowerPoint) File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_ms_f =input(f"{self.red}Input (Excel,World,PowerPoint) File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -305,7 +305,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "5":
-                b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"")
+                b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 hash_type = input(f"{self.red}Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>{self.reset_all}")
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
@@ -325,7 +325,7 @@ class PyCrack:
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
-                b_path = input(f"{self.red}Input File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_path = input(f"{self.red}Input File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 start_time = time.time()
                 b_list = open(b_path,"w")
                 th = threading.Thread(target=main.dic_gen_show)
@@ -347,7 +347,7 @@ class PyCrack:
             print(f"{self.blue}       {self.red}[5]{self.blue} Hash {self.red}[6]{self.blue} Genrate Dictionay {self.red}[0]{self.blue} Exit{self.reset_all}")
             b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/BrutForce~#{self.reset_all} ")
             if b_commands == "1":
-                b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
                 start_time = time.time()
                 for i in self.gen.Dictionay(b_dic):
@@ -361,7 +361,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "2":
-                b_rar = input(f"{self.red}Input RAR File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_rar = input(f"{self.red}Input RAR File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
                 start_time = time.time()
                 for i in self.gen.Dictionay(b_dic):
@@ -375,7 +375,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "3":
-                b_zip = input(f"{self.red}Input zip File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_zip = input(f"{self.red}Input zip File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
                 start_time = time.time()
                 for i in self.gen.Dictionay(b_dic):
@@ -389,7 +389,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "4":
-                b_ms_f = input(f"{self.red}Input (Excel,World,PowerPoint) File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_ms_f = input(f"{self.red}Input (Excel,World,PowerPoint) File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
                 b_ms = open(b_ms_f,"rb")
                 start_time = time.time()
@@ -404,7 +404,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "5":
-                b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"")
+                b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 hash_type = input(f"{self.red}Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>{self.reset_all}")
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
                 start_time = time.time()
@@ -425,7 +425,7 @@ class PyCrack:
             print(f"{self.blue}       {self.red}[5]{self.blue} Hash {self.red}[6]{self.blue} Genrate Dictionay {self.red}[0]{self.blue} Exit{self.reset_all}")
             b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/BrutForce~#{self.reset_all} ")
             if b_commands == "1":
-                b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -442,7 +442,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "2":
-                b_rar = input(f"{self.red}Input RAR File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_rar = input(f"{self.red}Input RAR File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -459,7 +459,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "3":
-                b_zip = input(f"{self.red}Input zip File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_zip = input(f"{self.red}Input zip File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -476,7 +476,7 @@ class PyCrack:
                 main.my_start()
             
             elif b_commands == "4":
-                b_ms_f = input(f"{self.red}Input (Excel,World,PowerPoint) File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_ms_f = input(f"{self.red}Input (Excel,World,PowerPoint) File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
@@ -494,7 +494,7 @@ class PyCrack:
                 main.my_start()
 
             elif b_commands == "5":
-                b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"")
+                b_hash =input(f"{self.red}Input Encripted Hsha String >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 hash_type = input(f"{self.red}Select [1]MD5 [2]SHA1 [3]SHA224 [4]SHA256 [5]SHA384 [6]SHA512 [7]BLAKE2B [8]BLAKE2S Type >>{self.reset_all}")
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
@@ -516,7 +516,7 @@ class PyCrack:
                 b_min = int(input(f"{self.red}Input Min Lenth Password >>{self.reset_all}"))
                 b_max = int(input(f"{self.red}Input Max Lenth Password >>{self.reset_all}"))
                 b_limit = int(input(f"{self.red}Input Limit of Password >>{self.reset_all}"))
-                b_path = input(f"{self.red}Input File name or path >>{self.reset_all}").replace("'","").replace('"',"")
+                b_path = input(f"{self.red}Input File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 start_time = time.time()
                 b_list = open(b_path,"w")
                 th = threading.Thread(target=main.dic_gen_show)
