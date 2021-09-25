@@ -345,7 +345,7 @@ class PyCrack:
         elif commands == "2":
             print(f"{self.blue}Select {self.red}[1]{self.blue} PDF {self.red}[2]{self.blue} RAR {self.red}[3]{self.blue} ZIP {self.red}[4]{self.blue} MS_Office")
             print(f"{self.blue}       {self.red}[5]{self.blue} Hash {self.red}[6]{self.blue} Genrate Dictionay {self.red}[0]{self.blue} Exit{self.reset_all}")
-            b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/BrutForce~#{self.reset_all} ")
+            b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/Dictionay~#{self.reset_all} ")
             if b_commands == "1":
                 b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
@@ -423,7 +423,7 @@ class PyCrack:
         elif commands == "3":
             print(f"{self.blue}Select {self.red}[1]{self.blue} PDF {self.red}[2]{self.blue} RAR {self.red}[3]{self.blue} ZIP {self.red}[4]{self.blue} MS_Office")
             print(f"{self.blue}       {self.red}[5]{self.blue} Hash {self.red}[6]{self.blue} Genrate Dictionay {self.red}[0]{self.blue} Exit{self.reset_all}")
-            b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/BrutForce~#{self.reset_all} ")
+            b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/Random~#{self.reset_all} ")
             if b_commands == "1":
                 b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 b_str = input(f"{self.red}Input Charectors >>{self.reset_all}")
