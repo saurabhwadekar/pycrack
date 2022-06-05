@@ -12,8 +12,14 @@ genrate word list
 ,-----------------------------------------------------------------------,
 |  this tool tested only Linux (Garuda Linux - Arch besd linux distro)  |
 |                                                                       |
-|        PyCrack This Tool Coded By - Saurabh Wadekar - Python3.9       | 
+|        PyCrack This Tool Coded By - Saurabh Wadekar - Python3.9       |
 '------------------------------use commands-----------------------------'
-1) sudo pip install -r requires.txt
-2) sudo chmod +x pycrack.py
-3) ./pycrack.py     OR    python pycrack.py
+1) cd pycarck
+2) sudo ./install.sh
+3) pycarck
+
+
+
+
+
+============================= THANK YOU =================================
