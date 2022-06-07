@@ -4,13 +4,13 @@ echo "installing python pakeges for pycrack"
 
 if apt install python3-pip qpdf python3-pikepdf;then
    echo "ok"
-elif pacman -S python-pikepdf;then
+elif pacman -S python-pip qpdf python-pikepdf;then
    echo "ok"
-elif dnf install python-pikepdf;then
+elif dnf install python3-pip python-pikepdf;then
    echo "ok"
-elif apk add py3-pikepdf;then
+elif apk add py3-pip py3-pikepdf;then
    echo "ok"
-elif pkg install py38-pikepdf;then
+elif pkg install python-pip qpdf py38-pikepdf;then
    echo "ok"
 elif pkg install python3 py38-lxml py38-pip py38-pybind11 qpdf;then
    echo "ok"
@@ -18,20 +18,6 @@ else
    echo "Unknown Oprating System"
 fi
 
-
-if apt install python3-pip;then
-   echo "ok"
-elif pacman -S python-pip;then
-   echo "ok"
-elif dnf install --assumeyes python3-pip;then
-   echo "ok"
-elif apk add python3 py3-pip;then
-   echo "ok"
-elif pkg install python-pip;then
-   echo "ok"
-else
-   echo "Unknown Oprating System"
-fi
 
 pip3 install -r requires.txt
 echo "start coping files"

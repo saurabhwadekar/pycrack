@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import hashlib,os,pikepdf,colorama,time,random,zipfile,msoffcrypto,io,threading
 from itertools import product
 from rarfile import RarFile
