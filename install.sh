@@ -19,7 +19,12 @@ else
 fi
 
 
-pip3 install -r requires.txt
+pip3 install rarfile==4.0
+pip3 install colorama==0.4.4
+pip3 install msoffcrypto-tool==4.12.0
+pip3 install pikepdf==2.12.1
+
+
 echo "start coping files"
 cp ./pycrack.py /usr/bin/pycrack
 echo "installetion complete"
