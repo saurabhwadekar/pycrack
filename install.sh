@@ -2,7 +2,7 @@
 echo "PyCrack Installer"
 echo "installing python pakeges for pycrack"
 
-if apt install pikepdf;then
+if apt install python3-pikepdf;then
    echo "ok"
 elif pacman -S python-pikepdf;then
    echo "ok"
@@ -19,7 +19,7 @@ else
 fi
 
 
-if apt install python-pip;then
+if apt install python3-pip;then
    echo "ok"
 elif pacman -S python-pip;then
    echo "ok"
