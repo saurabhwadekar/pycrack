@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "PyCrack Installer"
-echo "installing python pakeges for pycrack"
+echo "installing pakeges for pycrack"
 
 if apt install python3-pip qpdf python3-pikepdf;then
    echo "ok"

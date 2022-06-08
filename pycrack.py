@@ -35,8 +35,8 @@ class Check_Key:
 
     def pdf_key(self,file_name_or_path,password):
         try:
-            pikepdf.open(file_name_or_path,password)
-            return True
+            with pikepdf.open(file_name_or_path,password=password) as pdf:
+                return True
         except pikepdf._qpdf.PasswordError:
             return False
 
@@ -166,7 +166,7 @@ class PyCrack:
         {self.yellow}        __/ |                           
         {self.green}PyCrack{self.yellow}|___/ {self.green}The Password craking tool - Python 3  
         Git link - https://github.com/saurabhwadekar/pycrack.git                
-        Coded by - ({self.blue} Saurabh Wadekar [INDIA] {self.green}){self.reset_all}
+        Author - ({self.blue} Saurabh Wadekar [INDIA] {self.green}){self.reset_all}
         """
     def pass_found(self,target,key,obj_time_time):
         main.clear()
