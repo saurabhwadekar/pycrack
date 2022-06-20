@@ -159,7 +159,7 @@ class PyCrack:
         {self.bright}
         {self.yellow} _____       {self.blue}  _____                _    
         {self.yellow}|  __ \      {self.blue} / ____|              | |   
-        {self.yellow}| |__) |   _ {self.blue}| |     _ __ __ _  ___| | __ {self.red}V1.01
+        {self.yellow}| |__) |   _ {self.blue}| |     _ __ __ _  ___| | __ {self.red}V1.0.1
         {self.yellow}|  ___/ | | |{self.blue}| |    | '__/ _` |/ __| |/ /
         {self.yellow}| |   | |_| |{self.blue}| |____| | | (_| | (__|   <    
         {self.yellow}|_|    \__, |{self.blue} \_____|_|  \__,_|\___|_|\_\\
