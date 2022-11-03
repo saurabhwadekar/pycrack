@@ -348,7 +348,7 @@ class PyCrack:
             b_commands = input(f"{self.bright}{self.red}Py{self.green}@{self.red}Crack/Dictionay~#{self.reset_all} ")
             if b_commands == "1":
                 b_pdf = input(f"{self.red}Input PDF File name or path >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
-                b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}")
+                b_dic = input(f"{self.red}Input Dictionay File Path or Name >>{self.reset_all}").replace("'","").replace('"',"").lstrip().rstrip()
                 start_time = time.time()
                 for i in self.gen.Dictionay(b_dic):
                     main.trying(i,start_time)
