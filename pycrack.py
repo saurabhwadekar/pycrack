@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import hashlib,os,pikepdf,colorama,time,random,zipfile,msoffcrypto,io,threading
+import hashlib,os,pdfplumber,colorama,time,random,zipfile,msoffcrypto,io,threading
 from itertools import product
 from rarfile import RarFile
 
@@ -35,9 +35,9 @@ class Check_Key:
 
     def pdf_key(self,file_name_or_path,password):
         try:
-            with pikepdf.open(file_name_or_path,password=password) as pdf:
+            with pdfplumber.open(file_name_or_path,password=password) as pdf:
                 return True
-        except pikepdf._qpdf.PasswordError:
+        except pdfplumber.pdfminer.pdfdocument.PDFPasswordIncorrect:
             return False
 
     def rar_key(self,file_name_or_path,password):
@@ -159,7 +159,7 @@ class PyCrack:
         {self.bright}
         {self.yellow} _____       {self.blue}  _____                _    
         {self.yellow}|  __ \      {self.blue} / ____|              | |   
-        {self.yellow}| |__) |   _ {self.blue}| |     _ __ __ _  ___| | __ {self.red}V1.0.1
+        {self.yellow}| |__) |   _ {self.blue}| |     _ __ __ _  ___| | __ {self.red}V1.1.0
         {self.yellow}|  ___/ | | |{self.blue}| |    | '__/ _` |/ __| |/ /
         {self.yellow}| |   | |_| |{self.blue}| |____| | | (_| | (__|   <    
         {self.yellow}|_|    \__, |{self.blue} \_____|_|  \__,_|\___|_|\_\\

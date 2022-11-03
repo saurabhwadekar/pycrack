@@ -2,7 +2,7 @@
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/55120484/172302839-bbc0ad22-e676-4cb4-bb3b-0ad50d65f365.gif)
 
 # pycrack 
- Simple python 3 Tool for cracking 
+ Advance Password Cracking Tool With Support For Bruteforce Attacks, Dictionary Attacks,Random Attacks
 * pdf files
 * zip files
 * ms excel files
