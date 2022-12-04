@@ -20,7 +20,7 @@ This tool is capable of cracking files and hashes like PDF, Zip, MS Excel, MS Wo
 * sha512
 * blake2b
 * blake2s
-## Genratos
+## Genrators
 * Hash genrator
 * Wordlist genrate
 
