@@ -27,6 +27,8 @@ This tool is capable of cracking files and hashes like PDF, Zip, MS Excel, MS Wo
 ## Tested on these Operating Systems
 * Garuda Linux - Arch besd linux distro
 * Zorin OS - Ubuntu besd linux distro
+* Parrot os - Debian besd linux distro
+* Kali Linux - Debian besd linux distro
 
 ## Installation
 
