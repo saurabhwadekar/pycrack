@@ -2,3 +2,4 @@ rarfile==4.0
 colorama==0.4.4
 msoffcrypto-tool==4.12.0
 pdfplumber==0.7.5
+chardet==5.1.0

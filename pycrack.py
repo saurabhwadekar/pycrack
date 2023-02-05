@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import hashlib,os,pdfplumber,colorama,time,random,zipfile,msoffcrypto,io,threading
+import hashlib,os,pdfplumber,colorama,time,random,zipfile,msoffcrypto,io,threading,chardet
 from itertools import product
 from rarfile import RarFile
 
@@ -20,13 +20,14 @@ class Genrator:
                 word = "".join(w)
                 yield word
 
-    def Dictionay(self,file_name_or_path):
-        f = open(file_name_or_path,"r")
+    def Dictionay(self,file_name_or_path): # after update tested only garuda linux
+        f = open(file_name_or_path,"rb")
         pass_list = f.readlines()
         f.close()
         for i in pass_list:
-            word = i.replace("\n","")
-            yield word
+            detection = chardet.detect(i)
+            encoding = detection["encoding"]
+            yield i.decode(encoding).replace("\n","")
 
 
 
