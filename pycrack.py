@@ -27,7 +27,9 @@ class Genrator:
         for i in pass_list:
             detection = chardet.detect(i)
             encoding = detection["encoding"]
-            yield i.decode(encoding).replace("\n","")
+            try:
+                yield i.decode(encoding).replace("\n","")
+            except:pass
 
 
 
