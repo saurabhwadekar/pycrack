@@ -11,7 +11,6 @@ def format_path(path):
         path = path[1:-1]
     if path[0] == '"' and path[-1] == '"':
         path = path[1:-1]
-    print(path)
     return path
 
 class Genrator:
