@@ -54,6 +54,26 @@ start pycrack
 pycrack
 ```
 
+## Using Docker
+
+To use this with Docker you can use the following commands:
+
+### Build
+
+To build a Docker image named `pycrack` you can run the following command:
+
+```bash
+docker build -t pycrack .
+```
+
+### Running
+
+Once having built an image, you can run it, and share the current directory with `pycrack` by running the following command:
+
+```bash
+docker run -it --rm -v $PWD:/usr/src/app --name pycrack pycrack
+```
+
 ## License
 
 MIT
