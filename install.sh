@@ -15,7 +15,7 @@ if [ pip ]
 then 
 pip install rarfile==4.0
 pip install colorama==0.4.4
-pip install msoffcrypto-tool==4.12.0
+pip install msoffcrypto-tool==6.0.0
 pip install pdfplumber==0.7.5
 pip install chardet==5.1.0
 
